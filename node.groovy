@@ -1,21 +1,23 @@
 job('node js example'){
-	scm{
+	scm
+	{
 
 		git('git://github.com/vinodbhasyam/node-demo-app.git'){
 		node -> node / gitConfigName('Vinod Bhasyam')
 				node / gitConfigEmail('bhasyamvinod@gmail.com')
 		}
-		}
+	}
 
-		triggers{
-		scm('* * * * *')
-		}
-		{
-		wrappers{
+	triggers
+	{
+		scm('H/5 * * * *')
+	}
+	wrappers
+	{
 		nodejs('nodejs')
-		}
-		steps{
+	}
+	steps
+	{
 		sh ("npm install")
-		}
-		}
+	}
 }
