@@ -1,5 +1,5 @@
 job('node js example'){
-	decription('My First Job DSL')
+	description('My First Job DSL')
 	scm
 	{
 
