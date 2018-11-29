@@ -2,8 +2,8 @@ job('node js example'){
 	scm{
 
 		git('git://github.com/vinodbhasyam/node-demo-app.git'){
-		node => node / gitConfigName('Vinod Bhasyam')
-				node /gitConfigEmail('bhasyamvinod@gmail.com')
+		node -> node / gitConfigName('Vinod Bhasyam')
+				node / gitConfigEmail('bhasyamvinod@gmail.com')
 		}
 		}
 
