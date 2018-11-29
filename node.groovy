@@ -8,7 +8,7 @@ job('node js example'){
 		}
 
 		triggers{
-		scm(* * * * *)
+		scm('* * * * *')
 		}
 		{
 		wrappers{
