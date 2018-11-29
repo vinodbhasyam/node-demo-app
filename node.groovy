@@ -18,6 +18,6 @@ job('node js example'){
 	}
 	steps
 	{
-		sh ("npm install")
+		shell("npm install")
 	}
 }
